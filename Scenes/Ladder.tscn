@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Ladder.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.21, 80.9377 )
+
+[node name="Ladder" type="Node2D"]
+scale = Vector2( 0.995678, 0.988432 )
+script = ExtResource( 2 )
+
+[node name="LadderArea" type="Area2D" parent="."]
+
+[node name="LadderCollider" type="CollisionShape2D" parent="LadderArea"]
+shape = SubResource( 1 )
+[connection signal="body_entered" from="LadderArea" to="." method="_on_LadderArea_body_entered"]
+[connection signal="body_exited" from="LadderArea" to="." method="_on_LadderArea_body_exited"]

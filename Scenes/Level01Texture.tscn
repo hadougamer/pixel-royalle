@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/PixelRoyaleScene01.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.2304, 16 )
+
+[node name="Tiles" type="Node2D"]
+
+[node name="0" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="Body" type="StaticBody2D" parent="0"]
+
+[node name="Collider" type="CollisionShape2D" parent="0/Body"]
+shape = SubResource( 1 )
+
+[node name="1" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 32, 32 )
+
+[node name="2" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 32, 32 )
+
+[node name="Body" type="StaticBody2D" parent="2"]
+
+[node name="Collider" type="CollisionShape2D" parent="2/Body"]
+shape = SubResource( 1 )
+
+[node name="3" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
+[node name="4" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="Body" type="StaticBody2D" parent="4"]
+
+[node name="Collider" type="CollisionShape2D" parent="4/Body"]
+shape = SubResource( 1 )
+
+[node name="5" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 32, 32 )
+
+[node name="6" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 64, 32, 32 )
+
+[node name="7" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+
+[node name="8" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64, 64, 32, 32 )
+
+[node name="9" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 32, 32 )
+
+[node name="Body" type="StaticBody2D" parent="9"]
+
+[node name="Collider" type="CollisionShape2D" parent="9/Body"]
+shape = SubResource( 1 )
+
+[node name="10" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 32, 96, 32, 32 )
+
+[node name="Body" type="StaticBody2D" parent="10"]
+
+[node name="Collider" type="CollisionShape2D" parent="10/Body"]
+shape = SubResource( 1 )
