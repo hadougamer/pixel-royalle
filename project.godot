@@ -16,12 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="PixelRoyalle"
-run/main_scene="res://Scenes/SceneHandler.tscn"
+run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Globals="*res://Scripts/Globals.gd"
+Network="*res://Scripts/Network.gd"
 
 [display]
 
@@ -39,5 +40,4 @@ ui_jump={
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"
